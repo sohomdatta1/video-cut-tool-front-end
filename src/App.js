@@ -5,13 +5,12 @@ import { Redirect, BrowserRouter, Route, Switch  } from 'react-router-dom';
 // import { Redirect } from 'react-router';
 
 import home from './components/home';
-import NotFound from "./components/NotFound";
 
 function AppRoutes() {
   return (
     <Switch>
       {/* <Route exact path="*" component={NotFound} /> */}
-      <Route exact path="/video-cut-tool-front-end/" component={home} />
+      <Route exact path="/" component={home} />
       {/* <Route component={NotFound} /> */}
     </Switch>
   );
